@@ -5,9 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="./index.js"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./assets/css/all.css">
+  <script src="./index.js" defer></script>
 </head>
 <body>
-  
+  <h1>Rock - Paper - Scissors</h1>
+  <div class="container">
+    <h2>Choose your move to start the game!</h2>
+    <button data-value="rock" id="rock"><i data-value="rock" class="fa-regular fa-hand-back-fist"></i></button>
+    <button data-value="paper" id="paper"><i data-value="paper" class="fa-regular fa-hand"></i></button>
+    <button data-value="scissors" id="scissors"><i data-value="scissors" class="fa-regular fa-hand-scissors"></i></button>
+    <p id="gameboard">Let's see who is better..</p>
+    <div id="score">
+      <h3>Score</h3>
+      <div class="scoreTab">
+        <p id="playerScore">Player: 0</p>
+        <p id="computerScore">Computer: 0</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
